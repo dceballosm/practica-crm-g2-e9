@@ -6,6 +6,7 @@ import gestionMain.Clientes.Clientes;
 import gestionMain.Eventos.Eventos;
 import gestionMain.Registro.Registro;
 
+
 public class main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
