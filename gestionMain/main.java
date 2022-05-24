@@ -2,6 +2,7 @@ package gestionMain;
 
 import java.util.Scanner;
 
+import gestionMain.Clientes.Clientes;
 import gestionMain.Eventos.Eventos;
 import gestionMain.Registro.Registro;
 
@@ -40,7 +41,7 @@ public class main {
                    
             do {
                 try {
-                    System.out.print("\t MENU PRINCIPAL "+"\n1. Registro "+"\n2. Eventos "+"\n3. Salir: \n");
+                    System.out.print("\t MENU PRINCIPAL "+"\n1. Registro "+"\n2. Eventos "+"\n3. Clientes: "+"\n4. Salir. \n");
                     opcion1 = scan.nextInt();
                     switch (opcion1) {
                         case 1: 
@@ -48,14 +49,18 @@ public class main {
                             break;
                         case 2: 
                             Eventos.eventos();
-                        case 3: break;//SALIR
+                        case 3: 
+                            Clientes.clientes();
+                            break;
+                        case 4:
+
     
                     }
                 } catch (Exception e) {
                     System.out.print("Ingrese una opcion nuevamente: ");
                     opcion1 = scan.nextInt();
                 }
-            } while (opcion1 != 3);
+            } while (opcion1 != 4);
         
     
         }
